@@ -1,9 +1,9 @@
 const removeFromArray = function(array, ...removeValues) {
-    for (let i = 0; i < array.length; i++) {
+    for (let index = 0; index < array.length; index++) {
         for (const value of removeValues) {
-            if (array[i] === value) {
-                array.splice(i, 1);
-                i--;
+            if (array[index] === value) {
+                array.splice(index, 1);
+                index--;
             }
         }
     }
